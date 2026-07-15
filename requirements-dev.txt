@@ -1,0 +1,8 @@
+# Testing
+pytest>=8.4.1
+pytest-mock>=3.14.1
+
+# Static Analysis / Formatting
+black>=25.1.0
+ruff>=0.12.8
+mypy>=1.17.1
