@@ -1,0 +1,137 @@
+
+###############################################################################
+# Pixel Backup Manager Configuration
+###############################################################################
+
+###############################################################################
+# Source
+###############################################################################
+
+[source]
+
+# Folder containing photos/videos to upload
+directory = "/Users/Bernard/Pictures/Google Photos Upload"
+
+# Scan subdirectories recursively
+recursive = true
+
+# Delete local files after they have been successfully uploaded
+# and storage has been reclaimed on the Pixel.
+delete_after_backup = false
+
+
+###############################################################################
+# Phone
+###############################################################################
+
+[phone]
+
+# Destination folder on the Pixel
+upload_directory = "/sdcard/DCIM/Camera"
+
+# Keep at least this much free space available.
+minimum_free_space_gb = 6
+
+# Time (seconds) between backup status checks
+backup_check_interval = 30
+
+# Automatically keep the phone awake while connected
+keep_awake = true
+
+# Automatically wake the screen if needed
+wake_screen = true
+
+[file_types]
+
+include = [
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".heic",
+    ".gif",
+    ".mp4",
+    ".mov",
+    ".avi",
+    ".mkv"
+]
+
+###############################################################################
+# Transfer
+###############################################################################
+
+[transfer]
+
+# Number of files transferred in parallel.
+#
+# Leave at 1 initially.
+parallel_transfers = 1
+
+# Verify file size after transfer.
+verify_transfer = true
+
+# Retry failed transfers.
+retry_count = 3
+
+# Delay between retries.
+retry_delay_seconds = 5
+
+
+###############################################################################
+# Dashboard
+###############################################################################
+
+[dashboard]
+
+enabled = true
+
+refresh_rate = 4
+
+
+###############################################################################
+# Logging
+###############################################################################
+
+[logging]
+
+level = "INFO"
+
+log_directory = "logs"
+
+keep_log_files = 10
+
+
+###############################################################################
+# Database
+###############################################################################
+
+[database]
+
+filename = "pixel_backup.db"
+
+
+###############################################################################
+# Planner
+###############################################################################
+
+[planner]
+
+# Maximum number of files in a batch.
+#
+# 0 means unlimited.
+maximum_files_per_batch = 0
+
+# Maximum batch size in GB.
+#
+# 0 means use all available space.
+maximum_batch_size_gb = 0
+
+
+###############################################################################
+# Development
+###############################################################################
+
+[development]
+
+simulate_phone = false
+
+verbose_events = false
