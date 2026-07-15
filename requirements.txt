@@ -1,0 +1,42 @@
+# ============================================================================
+# Pixel Backup Manager
+# Requirements
+# Python >= 3.12
+# ============================================================================
+
+# Android
+adbutils>=2.9.3
+uiautomator2>=3.2.9
+
+# Database
+SQLAlchemy>=2.0.43
+
+# Configuration / Models
+pydantic>=2.11.7
+
+# Terminal UI
+rich>=14.1.0
+
+# Logging
+loguru>=0.7.3
+
+# File System Monitoring
+watchdog>=6.0.0
+
+# Progress Bars
+tqdm>=4.67.1
+
+# CLI
+typer>=0.17.3
+
+# Utilities
+python-dateutil>=2.9.0.post0
+
+# Testing
+pytest>=8.4.1
+pytest-mock>=3.14.1
+
+# Static Analysis / Formatting
+black>=25.1.0
+ruff>=0.12.8
+mypy>=1.17.1

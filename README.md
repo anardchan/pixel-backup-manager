@@ -1,0 +1,10 @@
+requirements.txt
+config.json
+models/enums.py
+models/media_file.py
+database/models.py
+database/db.py
+util/adb_service.py
+core/phone.py
+core/scanner.py
+main.py
